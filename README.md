@@ -32,10 +32,10 @@ This project was developed as a beginner-level web application to gain hands-on 
 - .env: Environment variables (excluded via .gitignore)
 
 Future Enhancements
--Authentication and role-based access control
--Voice or video chat support
--Responsive mobile UI
--Integration with a frontend framework like React or Vue
+- Authentication and role-based access control
+- Voice or video chat support
+- Responsive mobile UI
+- Integration with a frontend framework like React or Vue
 
 License
 This project is intended for educational purposes and does not carry a specific license.
