@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event_Lite</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 class="middle">Event_Lite</h1>
+    <hr>
+    <br>
+    <p class="middle" id="wlcm">Let's get you registered!</p>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+          const socket = io();
+    </script>
+    
+    <hr>
+    <div class="middle" id="wrapper">
+    <form action="" class="formStyle" id="signupForm">
+        <p><b>SIGN-UP</b></p>
+        <p>Enter your username:</p>
+        <input type="text" id="username" name="fname" required>
+        <p>Enter your password:</p>
+        <input type="password" id="password" name="pwd" required>
+        <p>Select Role: </p>
+        <select name="role" id="role">
+            <option value="admin">Admin</option>
+            <option value="attendee">Attendee</option>
+        </select>
+
+        <br><br>
+        <button id="signup_btn" type="submit">Sign-up</button>
+        <!-- <pre>Don't have an existing account? <a href="">Sign Up.</a></pre> -->
+    </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+h1{
+    color: rgb(65, 9, 32);
+    
+}
+
+p{
+    color: rgb(217, 10, 89);
+    /*text-align: center;*/ 
+    font-size: 120%; 
+}
+#wlcm{
+    font-size: 150%;
+}
+
+body{
+    background-color: rgb(236, 171, 196);
+}
+
+.middle{
+    text-align: center;
+}
+
+#message{
+    height: 25px;
+} 
+
+#btn{
+    height: 30px;
+    background-color: blue;
+    color: white;
+}
+
+#cut_btn{
+    height: 30px;
+    background-color: crimson;
+    color: yellow;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#wrapper {                                                          /*chatgpt*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+} 
+
+.formStyle {                                                           /*chatgpt*/
+    background-color: #ffffffcc; 
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* #chat_form{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+} */

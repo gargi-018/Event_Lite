@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event_Lite</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 class="middle">Event_Lite</h1>
+    <hr>
+    <div>
+        <img src="profile.jpeg" alt="" width="100px">
+        <div id="profile"></div>
+    </div>
+
+    <form>
+        <h2 class="middle"><u>Dashboard</u></h2>
+        <ul>
+            <div class="adminDash"><li><a href="#addEvent"><p>Add New event</p></a></li></div>
+            <li><a href="#joinEvent"><p>Join an existing event</p></a></li>
+        </ul>
+    </form>
+    <hr>
+
+    <div id="addEvent" class="adminDash">
+        <h2 class="middle"><u>Add an Event</u></h2>
+        <form action="" id="eventForm" class="myForm">
+        <p>Enter the name of the Event:</p>
+        <input type="text" placeholder="name of event" id="eventName">
+        <!-- <p>Enter a brief Description (optional):</p>
+        <input type="text" placeholder="description" id="eventDesc"> -->
+        <br><br>
+        <button id="addEventBtn" type="submit">Add</button>
+        </form>
+        <hr>
+    </div>
+
+    <div id="joinEvent">
+        <h2 class="middle"><u>Join an existing Event</u></h2>
+        <br>
+        <form id="eventCard">
+            <p>Choose the event:</p>
+            <select name="room" id="chat_room">
+            <option value="">--please select an event--</option>
+            <option value="General">General</option>
+            <div id="eventOption"></div>
+            </select>
+            <button type="submit">Join</button>
+        </form>
+
+        <hr>
+    </div>
+
+    <button type="button" id="logout">LogOut</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

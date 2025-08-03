@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event_Lite</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1 id="roomName" class="middle"></h1>
+        <hr>
+    </header>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+          const socket = io();
+    </script>
+    
+    <form action="" id="chat_form">
+        <!-- <p><b>Enter your message:</b></p> -->
+        <input type="text" placeholder="Type your message here" id="message" name="fname" required>
+        <button id="btn" type="submit">Send</button>
+    </form>
+    <br>
+    <hr>
+    <button id="cut_btn">Disconnect</button>
+    <!-- <hr> -->
+    <h4> Online:</h4>
+    <div id="active_users"></div>
+    <hr>
+    <div id="chat_box">
+        <h4> Chat Box:</h4></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script src="room.js"></script>
+</body>
+</html>

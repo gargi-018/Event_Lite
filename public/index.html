@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event_Lite</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 class="middle">Event_Lite</h1>
+    <hr>
+    <br>
+    <!-- <p class="middle" id="wlcm">Let's give those damned organisers a piece of our mind!</p> -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+          const socket = io();
+    </script>
+    
+    <hr>
+    <div class="middle" id="wrapper">
+    <form action="" class="formStyle" id="myForm">
+        <p><b>LOGIN</b></p>
+        <p>Enter your username:</p>
+        <input type="text" id="username" name="fname" required>
+        <p>Enter your password:</p>
+        <input type="password" id="password" name="pwd" required>
+        <!-- <p>Choose the event:</p>
+        <select name="room" id="chat_room">
+            <option value="">--please select an event--</option>
+            <option value="TTPD">TTPD</option>
+            <option value="The Black Dog">The Black Dog</option>
+            <option value="Cornelia_street">Cornelia Street</option>
+        </select> -->
+
+        <br><br>
+        <button id="login_btn" type="submit">Login</button>
+        <pre>Don't have an existing account? <a href="signup.html">Sign Up.</a></pre>
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
